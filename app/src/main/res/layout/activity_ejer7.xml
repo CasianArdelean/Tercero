@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dm2.tercero.Ejer7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cámara 1"/>
+
+        <Switch
+            android:id="@+id/camara1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="camara1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luz 1"/>
+        <Switch
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="luz1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camara 2"/>
+        <ToggleButton
+            android:id="@+id/camara2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOff="No"
+            android:textOn="Si"
+            android:onClick="camara2"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luz 2"/>
+
+        <ToggleButton
+            android:id="@+id/l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textOff="No"
+            android:textOn="Si"
+            android:onClick="luz2"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Persiana"/>
+        <ToggleButton
+            android:id="@+id/per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOff="Bajar"
+            android:textOn="Subir"
+            android:onClick="persiana"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/cam1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/camara"
+            />
+        <ImageView
+            android:id="@+id/bom1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bombillaap"/>
+        <ImageView
+            android:id="@+id/cam2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/camara"/>
+        <ImageView
+            android:id="@+id/bom2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bombillaap"/>
+        <ImageView
+            android:id="@+id/persiana"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dra"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
